@@ -7,6 +7,7 @@ def main() -> None:
     print("Installing pipenv...")
     system("pip install pipenv")
     print("Pipenv installed successfully.")
+    name = input("Enter the name of the app: ")
     system("mkdir {name}")
     system("cd {name}")
     with open("main.py", "w") as f:
@@ -21,7 +22,6 @@ def main() -> None:
     print("Requirements installed successfully.")
     print("Installing is succesfully done!")
     print("Creating a new Flask app...")
-    name = input("Enter the name of the app: ")
     print("Flask app created successfully.")
     print("Flask app is ready to use!")
     print("You can now run the app using the command 'pipenv run python main.py'")
